@@ -9,4 +9,7 @@ Make file contains commands needed.
 * `make test` Runs tests
 
 * `make run` Runs the program
+
 Viper-3 found the issue and got help to get it fixed
+
+High Jessie!
