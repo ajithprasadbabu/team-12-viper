@@ -1,10 +1,10 @@
 from dataclasses import dataclass
 
 
-@dataclass
 class Position:
-    x: int
-    y: int
+    def __init__(self):
+        self.x: int
+        self.y: int
 
     def getPosition (self):
         return (self, x, self, y)
