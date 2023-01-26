@@ -8,3 +8,6 @@ class GameMap:
 
     def calculatePosition(self, direction):
         pass
+
+    def validatePosition(self, direction):
+        pass
