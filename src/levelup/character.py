@@ -8,3 +8,5 @@ class Character:
     def __init__(self, name=DEFAULT_CHAR_NAME):
         self.name = name
         self.cPos = None
+    def move(self, direction):
+        direction = direction.lower()
