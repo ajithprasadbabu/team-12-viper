@@ -5,4 +5,5 @@ from dataclasses import dataclass
 class GameMap:
     row: int
     col: int
-    
+
+    def calculatePosition(self, direction):
