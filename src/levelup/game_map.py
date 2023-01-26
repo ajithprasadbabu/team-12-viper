@@ -7,3 +7,4 @@ class GameMap:
     col: int
 
     def calculatePosition(self, direction):
+        pass
