@@ -28,6 +28,10 @@ class GameController:
 
     def __init__(self):
         self.status = GameStatus()
+    
+    def set_character_position(self, xycoordinates: tuple) -> None:
+        print(f"Set character position state for testing")
+        # TODO: IMPLEMENT THIS
 
     def create_character(self, character_name: str) -> None:
         if not character_name:
