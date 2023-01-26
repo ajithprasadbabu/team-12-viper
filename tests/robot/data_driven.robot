@@ -14,3 +14,4 @@ Start new game with character
     Initialize controller
     Create character with name  ${provided}
     Character name should be    ${actual}
+    Initialize map

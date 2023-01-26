@@ -13,3 +13,7 @@ class GameControllerLibrary:
             raise AssertionError(
                 "%s != %s" % (self.controller.status.character.name, expected)
             )
+
+    def initialize_map(self):
+        if not self.controller.game_map:
+            raise AssertionError("map not initialized")

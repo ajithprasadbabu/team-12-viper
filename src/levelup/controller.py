@@ -17,10 +17,7 @@ class GameStatus:
     running: bool = False
     character: Character = Character(DEFAULT_CHARACTER_NAME)
     current_position: tuple = ARBITRARY_INVALID_INITIALIZED_POSITION
-
-    def set_character_position(self, xycoordinates: tuple) -> None:
-        print(f"Set character position state for testing")
-        # TODO: IMPLEMENT THIS
+    move_count: int = 0
 
 
 class GameController:
@@ -28,6 +25,7 @@ class GameController:
 
     def __init__(self):
         self.status = GameStatus()
+        self.game_map = None
     
     def set_character_position(self, xycoordinates: tuple) -> None:
         print(f"Set character position state for testing")
@@ -40,3 +38,7 @@ class GameController:
 
     def move(self, direction: Direction) -> None:
         print(f"Moved {direction.name}")
+
+    def set_move_count(self, move_count) -> None:
+        print(f"Set move count state for testing")
+        # TODO: IMPLEMENT THIS
