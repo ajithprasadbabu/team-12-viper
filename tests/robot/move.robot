@@ -9,7 +9,7 @@ Move on edge of board      0             0             SOUTH         0          
 
 *** Keywords ***
 Move character
-    [Arguments]    ${startingX}    ${startingY}    ${direction}    ${endingX}    ${endingY}
+    [Arguments]    ${startingX}    ${startingY}    ${direction}    ${endingX}    ${endingY}    ${startingMC}    ${endingMC}
     initialize_character_xposition_with  ${startingX}
     initialize_character_yposition_with  ${startingY}
     move_in_direction                    ${direction}
