@@ -7,7 +7,7 @@ class Position:
         self.y: int
 
     def getPosition (self):
-        return (self, x, self, y)
+        return (self.x, self.y)
 
     def setPosition (self, x, y):
         self.x = x
