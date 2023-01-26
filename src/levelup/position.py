@@ -9,6 +9,6 @@ class Position:
     def getPosition (self):
         return (self, x, self, y)
 
-    def setPosition (self, x, y):
+    def setgPosition (self, x, y):
         self.x = x
         self.y = y
