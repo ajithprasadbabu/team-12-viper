@@ -3,8 +3,8 @@ from dataclasses import dataclass
 
 class Position:
     def __init__(self):
-        self.x: int
-        self.y: int
+        self.x = -1
+        self.y = -1
 
     def getPosition (self):
         return (self.x, self.y)
