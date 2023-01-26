@@ -7,10 +7,10 @@ start_y: int
 class MoveLibrary:
 
     # Pre-Conditions
-    def inittialize_character_xpostiion_with(self, x_position):
+    def initialize_character_xpostion_with(self, x_position):
         self.start_x = x_position
 
-    def inittialize_character_ypostiion_with(self, y_position):
+    def initialize_character_ypostion_with(self, y_position):
         self.start_y = y_position
     
     def move_in_direction(self, direction):
