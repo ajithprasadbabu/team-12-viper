@@ -10,8 +10,8 @@ Move on edge of board      0             0             SOUTH         0          
 *** Keywords ***
 Move character
     [Arguments]    ${startingX}    ${startingY}    ${direction}    ${endingX}    ${endingY}
-    Initialize character xposition with  ${startingX}
-    Initialize character yposition with  ${startingY}
-    Move in direction                    ${direction}
-    Character xposition should be        ${endingX}
-    Character yposition should be        ${endingY}
+    initialize_character_xpostion_with  ${startingX}
+    initialize_character_ypostion_with  ${startingY}
+    move_in_direction                    ${direction}
+    character_xposition_should_be        ${endingX}
+    character_yposition_should_be        ${endingY}
