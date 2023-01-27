@@ -10,17 +10,18 @@ class Character:
         self.name = name
         self.position = None
         
-    def setPosition(self,x,y):
-        self.position.setPosition(x,y)
+    def setPosition(self, position):
+        self.position = position
 
     def getPosition(self):
-        return self.position.getPosition()
+        return self.position
 
     def move(self, direction):
         direction = direction.lower()
         nPos_x = None
         nPos_y = None
-        cPos_x,cPos_y = self.getPosition()
+        cPos_x = self.position.x
+        cPos_y = self.position.y
 
         if direction == 'n':
             nPos_x = cPos_x - 1

@@ -5,7 +5,7 @@ from levelup.character import Character
 from levelup.position import Position
 
 class FakeGameMap(GameMap):
-    starting_position: Position = Position(4,4)
+    starting_position: Position = Position().setPosition(4,4)
 
 class FakeCharacter(Character):
     def __init__(self, name):
