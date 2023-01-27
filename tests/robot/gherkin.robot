@@ -13,6 +13,10 @@ Game controller initialized without character name
     When character is created with name ""
     Then actual character name is "Character"
 
+Game controller start the game
+    Given controller has been initialized
+    Map has been initialized
+
 *** Keywords ***
 Controller has been initialized
     Initialize controller
@@ -22,3 +26,6 @@ Character is created with name "${provided}"
 
 Actual character name is "${actual}"
     Character name should be   ${actual}
+
+Map has been initialized
+    Initialize map

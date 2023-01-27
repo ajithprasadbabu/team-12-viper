@@ -1,5 +1,5 @@
 from dataclasses import dataclass
-from position import Position
+from levelup.position import Position
 
 @dataclass
 class Character:
@@ -7,7 +7,7 @@ class Character:
     DEFAULT_CHAR_NAME = "Viper"
     def __init__(self, name=DEFAULT_CHAR_NAME):
         self.name = name
-        self.position = Position()
+        self.position = None
         
     def setPosition(self,x,y):
         self.position.setPosition(x,y)

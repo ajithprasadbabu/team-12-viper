@@ -1,6 +1,7 @@
 from enum import Enum
 from dataclasses import dataclass
 from levelup.character import Character
+from levelup.game_map import GameMap
 
 DEFAULT_CHARACTER_NAME = "Character"
 ARBITRARY_INVALID_INITIALIZED_POSITION = (-1,-1)
@@ -22,14 +23,16 @@ class GameStatus:
 
 class GameController:
     status: GameStatus
+    game_map: GameMap
 
     def __init__(self):
         self.status = GameStatus()
         self.game_map = None
-    
-    def set_character_position(self, xycoordinates: tuple) -> None:
+
+    def set_character_position(self, position) -> None:
         print(f"Set character position state for testing")
         # TODO: IMPLEMENT THIS
+        self.status.character.position = position
 
     def create_character(self, character_name: str) -> None:
         if not character_name:
@@ -42,3 +45,7 @@ class GameController:
     def set_move_count(self, move_count) -> None:
         print(f"Set move count state for testing")
         # TODO: IMPLEMENT THIS
+    
+    def start_game(self):
+        self.set_character_position(self.game_map.starting_position)
+        print(f"Game started")
