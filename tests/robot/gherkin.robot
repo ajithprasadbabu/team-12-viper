@@ -13,9 +13,15 @@ Game controller initialized without character name
     When character is created with name ""
     Then actual character name is "Character"
 
+Game controller initialized map
+    Given controller has been initialized
+    Then Map has been initialized
+
 Game controller start the game
     Given controller has been initialized
-    Map has been initialized
+    Given character is created with name ""
+    When Game start
+    Then character position should be at map starting position
 
 *** Keywords ***
 Controller has been initialized
@@ -29,3 +35,9 @@ Actual character name is "${actual}"
 
 Map has been initialized
     Initialize map
+
+Game start
+    Start game
+
+Character position should be at map starting position
+    Character position at starting position

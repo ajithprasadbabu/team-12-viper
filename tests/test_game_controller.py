@@ -36,15 +36,8 @@ class TestGameController(TestCase):
         self.assertEqual(expected_character_name, test_controller.status.character.name)
 
     def test_start_game(self):
-        game_map = FakeGameMap()
-        character = FakeCharacter(DEFAULT_CHARACTER_NAME)
-        character.set_position(game_map.starting_position)
-        
         test_controller = GameController()
-
-        test_controller.game_map = game_map
-        test_controller.character = character
-        
+        test_controller.create_character("")
         test_controller.start_game()
         self.assertIsNotNone(test_controller.game_map)
         self.assertEqual(test_controller.status.character.position, test_controller.game_map.starting_position)

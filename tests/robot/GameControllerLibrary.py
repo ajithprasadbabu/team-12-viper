@@ -17,3 +17,10 @@ class GameControllerLibrary:
     def initialize_map(self):
         if not self.controller.game_map:
             raise AssertionError("map not initialized")
+    
+    def start_game(self):
+        self.controller.start_game()
+
+    def character_position_at_starting_position(self):
+        if (self.controller.status.character.position != self.controller.game_map.starting_position):
+            raise AssertionError("Character is not at map starting position")

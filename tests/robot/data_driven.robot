@@ -15,3 +15,6 @@ Start new game with character
     Create character with name  ${provided}
     Character name should be    ${actual}
     Initialize map
+    Start game
+    Character position at starting position
+

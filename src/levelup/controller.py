@@ -27,7 +27,7 @@ class GameController:
 
     def __init__(self):
         self.status = GameStatus()
-        self.game_map = None
+        self.game_map = GameMap()
 
     def set_character_position(self, position) -> None:
         print(f"Set character position state for testing")

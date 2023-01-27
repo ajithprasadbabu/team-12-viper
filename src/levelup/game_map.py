@@ -1,4 +1,5 @@
 from dataclasses import dataclass
+from levelup.position import Position
 
 MIN_ROW = 0
 MAX_ROW = 9
@@ -7,9 +8,12 @@ MAX_COL = 9
 
 
 class GameMap:
+    starting_position: Position = Position()
+
     def __init__(self):
-        self.row: int = 4
-        self.col: int = 4
+        self.row: int = MAX_ROW
+        self.col: int = MAX_COL
+        self.starting_position.setPosition(4,4)
 
     def calculatePosition(self, position, direction):
         self.row = position.x
