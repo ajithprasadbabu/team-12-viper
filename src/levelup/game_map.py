@@ -36,4 +36,4 @@ class GameMap:
                 self.col = col 
 
     def validatePosition(self, row, col):
-        return col >= MIN_COL and col < MAX_COL and row >= MIN_ROW and row <= MAX_ROW 
+        return col >= MIN_COL and col <= MAX_COL and row >= MIN_ROW and row <= MAX_ROW 
