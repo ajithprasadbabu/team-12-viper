@@ -16,8 +16,8 @@ class TestGameMap(TestCase):
         self.assertFalse(self.gamemap.validatePosition(0,-1))
         
 
-    def test_calculatePosition(self):
-        self.gamemap.
+    # def test_calculatePosition(self):
+    #     self.gamemap.
 
 
 if __name__ == '__main__':
