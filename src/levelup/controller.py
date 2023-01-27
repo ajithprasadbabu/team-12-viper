@@ -40,7 +40,8 @@ class GameController:
         self.status.character = Character(character_name)
 
     def move(self, direction: Direction) -> None:
-        print(f"Moved {direction.name}")
+        self.status.character.move(direction)
+        print(f"You are at {self.status.character.getPosition().getPosition()}")
 
     def set_move_count(self, move_count) -> None:
         print(f"Set move count state for testing")

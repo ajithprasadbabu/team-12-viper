@@ -7,7 +7,7 @@ Library           MoveLibrary.py
 Move N middle of board     4             4             NORTH         3           4          3           4
 Move S middle of board     4             4             SOUTH         5           4          5           6
 Move E middle of board     4             4             EAST          4           5          6           7
-Move W middle of board     4             4             SOUTH         4           3          8           9
+Move W middle of board     4             4             WEST          4           3          8           9
 
 *** Keywords ***
 Move character
