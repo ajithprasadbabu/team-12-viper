@@ -13,6 +13,10 @@ class GameMap:
     def __init__(self):
         self.row: int = MAX_ROW
         self.col: int = MAX_COL
+<<<<<<< HEAD
+=======
+        self.starting_position = Position()
+>>>>>>> a996d92 (Fixing games)
         self.starting_position.setPosition(4,4)
 
     def calculatePosition(self, position, direction):

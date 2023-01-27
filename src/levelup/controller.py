@@ -33,6 +33,7 @@ class GameController:
         print(f"Set character position state for testing")
         # TODO: IMPLEMENT THIS
         self.status.character.position = position
+        print(f"My X: {self.status.character.position.x}, My Y: {self.status.character.position.y}")
 
     def create_character(self, character_name: str) -> None:
         if not character_name:

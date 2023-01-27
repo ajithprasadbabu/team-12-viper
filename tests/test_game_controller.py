@@ -4,8 +4,7 @@ from levelup.game_map import GameMap
 from levelup.character import Character
 from levelup.position import Position
 
-class FakeGameMap(GameMap):
-    starting_position: Position = Position().setPosition(4,4)
+
 
 class FakeCharacter(Character):
     def __init__(self, name):
@@ -36,8 +35,13 @@ class TestGameController(TestCase):
         self.assertEqual(expected_character_name, test_controller.status.character.name)
 
     def test_start_game(self):
+
+        game_map = FakeGameMap()
+        character = FakeCharacter(DEFAULT_CHARACTER_NAME)
+        character.set_position(game_map.starting_position)  
         test_controller = GameController()
-        test_controller.create_character("")
+        test_controller.character = character
+
         test_controller.start_game()
         self.assertIsNotNone(test_controller.game_map)
         self.assertEqual(test_controller.status.character.position, test_controller.game_map.starting_position)
